@@ -1,6 +1,7 @@
 var i = 0;
-var arr = newList;
-
+var x = new Date();
+var x = document.getElementsByTagName('ol');
+var isVisible = true;
 
 function checkIn(){
   var newList = document.createElement('li');
@@ -9,15 +10,20 @@ function checkIn(){
   var position = document.getElementsByTagName('ol')[0];
   document.getElementById('checkin').value = " ";
 
-    if(i > 4){
+    if(i < 4){
+      i++;
+      position.appendChild(newList);
+    }
+    else{
       document.getElementById('fullroom').innerHTML = "room is full!!";
       
     }
-    else{
-      i++;
-      position.appendChild(newList);
-      
-    }
+    
+    var x = new Date();
+    var date = usercheckin.getDate();
+    var month = usercheckin.getMonth();
+    var year = usercheckin.getFullYear();
+    var timestamp = time + ": " + date + "-" +(month+1) + "-" +year;
         
 }
 
@@ -32,5 +38,19 @@ function checkOut(){
 }
   
 function clearAll(){
-  var arr = [];
+  for (i = 0; i < x.length; i++) {
+    x[i].innerHTML = "";
+    
+  }
+}
+
+function lockRoom(){
+  if (isVisible == true){
+    document.getElementById('checkin').style.visibility = "hidden";
+    isVisible = false;
+  }
+  else{
+    document.getElementById('checkin').style.visibility = "visible";
+    isVisible = true;
+  }
 }

@@ -2,10 +2,10 @@
   width:90%;
 }
 #divbox{
-  width:20%;
+  width: 21%;
   display: inline-block;
-  padding: 2px;
-  margin: 11px;
+  padding: 10%;
+  margin: 30px;
   background-color: orange;
   padding:10px;
 }
