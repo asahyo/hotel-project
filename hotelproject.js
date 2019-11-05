@@ -13,10 +13,10 @@ function checkIn(){
     if(i < 4){
       i++;
       position.appendChild(newList);
+      if()
     }
     else{
       document.getElementById('fullroom').innerHTML = "room is full!!";
-      
     }
     
     var x = new Date();
@@ -34,6 +34,7 @@ function checkOut(){
   var parent = child.parentNode;
   parent.removeChild(child);
   document.getElementById('checkout').value = " ";
+  document.getElementById('fullroom').innerHTML = " ";
   
 }
   
@@ -42,6 +43,7 @@ function clearAll(){
     x[i].innerHTML = "";
     
   }
+  document.getElementById('fullroom').innerHTML = " ";
 }
 
 function lockRoom(){
