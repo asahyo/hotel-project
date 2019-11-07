@@ -1,11 +1,15 @@
 var i = 0;
-var x = new Date();
 var x = document.getElementsByTagName('ol');
 var isVisible = true;
 
+
 function checkIn(){
+  var date = new Date();
+  var month = date.getMonth();
+  
   var newList = document.createElement('li');
-  var x = document.createTextNode(document.getElementById('checkin').value);
+  var guest = document.getElementById('checkin').value;
+  var x = document.createTextNode(guest + month);
   newList.appendChild(x);
   var position = document.getElementsByTagName('ol')[0];
   document.getElementById('checkin').value = " ";
@@ -13,17 +17,10 @@ function checkIn(){
     if(i < 4){
       i++;
       position.appendChild(newList);
-      if()
     }
     else{
       document.getElementById('fullroom').innerHTML = "room is full!!";
     }
-    
-    var x = new Date();
-    var date = usercheckin.getDate();
-    var month = usercheckin.getMonth();
-    var year = usercheckin.getFullYear();
-    var timestamp = time + ": " + date + "-" +(month+1) + "-" +year;
         
 }
 
@@ -48,11 +45,12 @@ function clearAll(){
 
 function lockRoom(){
   if (isVisible == true){
-    document.getElementById('checkin').style.visibility = "hidden";
+    document.getElementById('lock').style.visibility = "hidden";
     isVisible = false;
   }
   else{
-    document.getElementById('checkin').style.visibility = "visible";
+    document.getElementById('lock').style.visibility = "visible";
     isVisible = true;
   }
 }
+
