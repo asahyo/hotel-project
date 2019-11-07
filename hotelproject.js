@@ -2,14 +2,18 @@ var i = 0;
 var x = document.getElementsByTagName('ol');
 var isVisible = true;
 
+var date = new Date();
+var m = ["Jan", "Feb", "Mar", "Apr", "May", "June", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+var month = m[date.getMonth()];
+
+var n = d.getDate();
+document.getElementById("demo").innerHTML = n;
+
 
 function checkIn(){
-  var date = new Date();
-  var month = date.getMonth();
-  
   var newList = document.createElement('li');
   var guest = document.getElementById('checkin').value;
-  var x = document.createTextNode(guest + month);
+  var x = document.createTextNode(guest+" "+month);
   newList.appendChild(x);
   var position = document.getElementsByTagName('ol')[0];
   document.getElementById('checkin').value = " ";
