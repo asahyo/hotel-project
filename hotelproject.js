@@ -50,7 +50,6 @@ function checkOut(){
 function clearAll(){
   for (i = 0; i < x.length; i++) {
     x[i].innerHTML = "";
-    
   }
   document.getElementById('fullroom').innerHTML = " ";
 }
