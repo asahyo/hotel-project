@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script src = "hotelprojecttest.js"></script>
+    <link rel = "stylesheet" href="hotelproject.css">
+  </head>
+  <body>
+    <div class = "mydiv">
+      <div id = "room1" class = "room">
+      <p id = "fullroom"></p>
+      <input type = "text" id = "checkin" placeholder = "input name ... ">
+      <button onclick = "checkIn()" id = "lock">check in</button>
+      <ol id = "pos1">
+      </ol>
+      <input type = "number" id  = "checkout" placeholder = "check out by your #...">
+      <button onclick = "checkOut()">check out</button>
+      <hr>
+      <button onclick = "clearAll()">clear room</button>
+      <button onclick = "lockRoom()">lock room</button>
+      </div>
+      
+      <div id = "room2" class="room">
+      <p id = "fullroom2"></p>
+      <input type = "text" id = "checkin2" placeholder = "input name ... ">
+      <button onclick = "checkIn2()" id = "lock2">check in</button>
+      <ol id = "pos2">
+      </ol>
+      <input type = "number" id  = "checkout2" placeholder = "check out by your #...">
+      <button onclick = "checkOut2()">check out</button>
+      <hr>
+      <button onclick = "clearAll2()">clear room</button>
+      <button onclick = "lockRoom2()">lock room</button>
+      </div>
+      
+      <button onclick="showvar()">show var</button>
+      <p id="var"></p>
+      <p id="var2"></p>
+      
+    </div>
+      
+  </body>
+</html>
