@@ -1,31 +1,56 @@
-#div{
-  width:90%;
-}
-
 #inputstyle{
-  width: 150px;
+  width: 10px;
   position: absolute;
 }
-
 
 #user{
   color: black;
 }
 
+.headerdiv{
+  width: 100%;
+  height: 30%;
+  background-color: yellow
+}
+
+#header{
+  width: 100%;
+  margin: 0px, auto;
+  padding: 0px;
+  float: left;
+}
+
+#logo{
+  width: 30%;
+  float: left;
+}
 
 .room{
   width: 21%;
-  height: 48%;
+  height: 30%;
   float: left;
   display: inline-block;
-  padding: 10%;
-  margin: 30px;
+  padding: 10px;
+  margin: 20px;
   background-color: pink;
-  padding:10px;
+  overflow: auto;
 }
 
 .mydiv {
   width: 70%;
-  position: absolute;
+  position: static;
+
+}
+
+#guestlist{
+  width: 18%;
+  height: 40%;
+  float: left;
+  left: 60%;
+  top: 28%;
+  position: fixed;
+  padding: 10px;
+  background-color: lightblue;
+  overflow: auto;
 
 }
