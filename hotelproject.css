@@ -1,9 +1,12 @@
-
-
 #user{
   color: black;
 }
 
+.roomname{
+  font-family: 'Amatic SC', cursive;
+  font-size: 23px;
+  letter-spacing: 5px;
+}
 
 #background{
   width: 100%;
