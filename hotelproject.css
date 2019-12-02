@@ -1,6 +1,42 @@
-#user{
-  color: black;
+
+/*@keyframes move {
+  100% {
+    transform: translate(-33vw);
+  }
 }
+
+@keyframes come {
+  100% {
+    opacity: 1;
+  }
+}
+
+.bicycle{
+  float: left;
+  position: absolute;
+  left: 70%;
+  top: 40%;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+#ryokanc{
+  width: 40%;
+  float: left;
+  position: absolute;
+  top: 30%;
+}
+
+.page{
+  opacity: 0;
+  animation-name: come;
+  animation-delay: 2.9s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}*/
 
 .roomname{
   font-family: 'Amatic SC', cursive;
@@ -9,44 +45,52 @@
 }
 
 #background{
-  width: 100%;
-  z-index: 1;
+  width: 98.5%;
+  z-index: -1;
   position:absolute;
 }
 
 #logo{
-  width: 23%;
+  width: 20%;
   position: relative;
 }
 
 .room{
-  width: 21%;
-  height: 30%;
+  width: 20%;
+  height: 40%;
   float: left;
   display: inline-block;
   padding: 10px;
-  margin: 20px;
+  margin: 25px;
   background-color: pink;
   overflow: auto;
   position: relative;
 }
 
 .mydiv {
-  width: 70%;
+  width: 100%;
   position: relative;
-  z-index: 5;
+  z-index: 1;
   opacity: 0.85;
 }
 
+#roomphoto{
+  width: 81%;
+}
+
 #guestlist{
-  width: 18%;
+  width: 45%;
   height: 40%;
-  float: left;
-  left: 60%;
-  top: 28%;
-  position: fixed;
+  float: right;
+  right: 2%;
+  top: 3%;
+  position: relative;
   padding: 10px;
   background-color: lightblue;
   overflow: auto;
+}
 
+#guestcss{
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 5px;
 }

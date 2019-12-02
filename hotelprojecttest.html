@@ -3,16 +3,26 @@
     <script src = "hotelprojecttest.js"></script>
     <link rel = "stylesheet" href="hotelproject.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div>
+    <!--
+    <img src = "ryokan.png" id = "ryokanc">
+    <div class = "bicycle">
+      <img src = "hanabicycle.gif" width = 80%>
+    </div>
+    <div class = "page">-->
+      <div>
       <center><img src = "logohotel.png" id = "logo"></center>
-      <img src = "hotelbackground.jpg" id = "background">
+      <img src = "background.jpg" id = "background">
     </div>
       
     <div class = "mydiv">
       <div id = "room1" class = "room">
-        <center><p class = "roomname">room 1</p></center>
+        <center>
+          <p class = "roomname">room 1</p>
+          <img src = "room1.jpg" id = "roomphoto">
+        </center>
       <p id = "fullroom"></p>
       <input type = "text" id = "checkin" placeholder = "input name ... ">
       <button onclick = "checkIn()" id = "lock">check in</button>
@@ -32,7 +42,10 @@
       </div>
       
       <div id = "room2" class="room">
-        <center><p class = "roomname">room 2</p></center>
+        <center>
+          <p class = "roomname">room 2</p>
+          <img src = "room2.jpg" id = "roomphoto">
+          </center>
       <p id = "fullroom2"></p>
       <input type = "text" id = "checkin2" placeholder = "input name ... ">
       <button onclick = "checkIn2()" id = "lock2">check in</button>
@@ -52,7 +65,10 @@
       </div>
       
       <div id = "room3" class="room">
-        <center><p class = "roomname">room 3</p></center>
+        <center>
+          <p class = "roomname">room 3</p>
+          <img src = "room3.jpg" id = "roomphoto">
+          </center>
       <p id = "fullroom3"></p>
       <input type = "text" id = "checkin3" placeholder = "input name ... ">
       <button onclick = "checkIn3()" id = "lock3">check in</button>
@@ -72,7 +88,10 @@
       </div>
       
       <div id = "room4" class="room">
-        <center><p class = "roomname">room 4</p></center>
+        <center>
+          <p class = "roomname">room 4</p>
+          <img src = "room4.jpg" id = "roomphoto">
+          </center>
       <p id = "fullroom4"></p>
       <input type = "text" id = "checkin4" placeholder = "input name ... ">
       <button onclick = "checkIn4()" id = "lock4">check in</button>
@@ -92,7 +111,10 @@
       </div>
       
       <div id = "room5" class="room">
-        <center><p class = "roomname">room 5</p></center>
+        <center>
+          <p class = "roomname">room 5</p>
+          <img src = "room5.jpg" id = "roomphoto">
+          </center>
       <p id = "fullroom5"></p>
       <input type = "text" id = "checkin5" placeholder = "input name ... ">
       <button onclick = "checkIn5()" id = "lock5">check in</button>
@@ -112,7 +134,10 @@
       </div>
       
       <div id = "room6" class="room">
-        <center><p class = "roomname">room 6</p></center>
+        <center>
+          <p class = "roomname">room 6</p>
+          <img src = "room6.jpg" id = "roomphoto">
+          </center>
       <p id = "fullroom6"></p>
       <input type = "text" id = "checkin6" placeholder = "input name ... ">
       <button onclick = "checkIn6()" id = "lock6">check in</button>
@@ -132,10 +157,12 @@
       </div>
       
       <div id = "guestlist">
-      <h1>All Guests</h1>
+      <h1 id = "guestcss">All Guests:</h1>
       </div>
       
     </div>
+    </div>
+    
       
   </body>
 </html>
