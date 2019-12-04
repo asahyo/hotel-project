@@ -29,9 +29,15 @@ function checkIn(){
   var list = document.getElementById('guestlist');
   document.getElementById('checkin').value = " ";
     if(i < 4){
-      i++;
-      position.appendChild(newList);
-      list.appendChild(newListguest);
+      if(guest.length < 1){
+        window.alert("please input guest name");
+      }
+      else{
+        i++;
+        position.appendChild(newList);
+        list.appendChild(newListguest);
+      }
+      
     }
     else{
       document.getElementById('fullroom').innerHTML = "room is full!!";
@@ -83,9 +89,14 @@ function checkIn2(){
   var list = document.getElementById('guestlist');
   document.getElementById('checkin2').value = " ";
     if(s < 4){
-      s++;
-      position.appendChild(newList);
-      list.appendChild(newListguest);
+      if(guest.length < 1){
+        window.alert("please input guest name");
+      }
+      else{
+        s++;
+        position.appendChild(newList);
+        list.appendChild(newListguest);
+      }
     }
     else{
       document.getElementById('fullroom2').innerHTML = "room is full!!";
@@ -136,9 +147,14 @@ function checkIn3(){
   var list = document.getElementById('guestlist');
   document.getElementById('checkin3').value = " ";
     if(v < 4){
-      v++;
-      position.appendChild(newList);
-      list.appendChild(newListguest);
+      if(guest.length < 1){
+        window.alert("please input guest name");
+      }
+      else{
+        v++;
+        position.appendChild(newList);
+        list.appendChild(newListguest);
+      }
     }
     else{
       document.getElementById('fullroom3').innerHTML = "room is full!!";
@@ -189,9 +205,14 @@ function checkIn4(){
   var list = document.getElementById('guestlist');
   document.getElementById('checkin4').value = " ";
     if(t < 4){
-      t++;
-      position.appendChild(newList);
-      list.appendChild(newListguest);
+      if(guest.length < 1){
+        window.alert("please input guest name");
+      }
+      else{
+        t++;
+        position.appendChild(newList);
+        list.appendChild(newListguest);
+      }
     }
     else{
       document.getElementById('fullroom4').innerHTML = "room is full!!";
@@ -242,9 +263,14 @@ function checkIn5(){
   var list = document.getElementById('guestlist');
   document.getElementById('checkin5').value = " ";
     if(a < 4){
-      a++;
-      position.appendChild(newList);
-      list.appendChild(newListguest);
+      if(guest.length < 1){
+        window.alert("please input guest name");
+      }
+      else{
+        a++;
+        position.appendChild(newList);
+        list.appendChild(newListguest);
+      }
     }
     else{
       document.getElementById('fullroom5').innerHTML = "room is full!!";
@@ -295,9 +321,14 @@ function checkIn6(){
   var list = document.getElementById('guestlist');
   document.getElementById('checkin6').value = " ";
     if(m < 4){
-      m++;
-      position.appendChild(newList);
-      list.appendChild(newListguest);
+      if(guest.length < 1){
+        window.alert("please input guest name");
+      }
+      else{
+        m++;
+        position.appendChild(newList);
+        list.appendChild(newListguest);
+      }
     }
     else{
       document.getElementById('fullroom6').innerHTML = "room is full!!";
