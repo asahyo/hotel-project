@@ -38,6 +38,31 @@
   animation-timing-function: ease-in;
 }*/
 
+button{
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-size: 12px;
+  letter-spacing: 2px;
+  background-color: #C4DEFF;
+  opacity: 0.7;
+}
+
+p{
+  color: black;
+  font-family: 'Indie Flower', cursive;
+}
+
+ol{
+  color: black;
+  font-family: 'Indie Flower', cursive;
+}
+
+#guestlist{
+  color: black;
+  font-family: 'Indie Flower', cursive;
+}
+
+
 .roomname{
   font-family: 'Amatic SC', cursive;
   font-size: 23px;
@@ -46,6 +71,7 @@
 
 #background{
   width: 98.5%;
+  height: 135%;
   z-index: -1;
   position:absolute;
 }
@@ -57,7 +83,7 @@
 
 .room{
   width: 20%;
-  height: 43%;
+  height: 60%;
   float: left;
   display: inline-block;
   padding: 10px;
@@ -83,8 +109,8 @@
   width: 45%;
   height: 42%;
   float: right;
-  right: 2%;
-  top: 57%;
+  right: 3%;
+  top: 71%;
   position: absolute;
   padding: 10px;
   background-color: #C4DEFF;
